@@ -1,0 +1,19 @@
+[package]
+name = "beacon"
+version = "0.1.0"
+edition = "2024"
+description = "A CLI tool to listen for Wake-on-LAN magic packets"
+authors = ["You"]
+license = "MIT"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+jiff = "0.2"
+crossterm = "0.27"
+local-ip-address = "0.6"
+color-eyre = "0.6.5"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
