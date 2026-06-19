@@ -2,10 +2,6 @@
 
 `beacon` is a terminal tool for listening for Wake-on-LAN (WoL) magic packets. It shows the local network interfaces at startup, then prints the time, sender address, and target MAC address for each received magic packet.
 
-## Requirements
-
-- [Rust](https://www.rust-lang.org/tools/install) (edition 2024 compatible toolchain)
-
 ## Run
 
 ```sh
